@@ -9,7 +9,6 @@ import { components, buttons, shadows } from 'netlify-cms-ui-default';
 const CollectionTopContainer = styled.div`
   ${components.cardTop};
   margin-bottom: 22px;
-
 `;
 
 const CollectionTopRow = styled.div`

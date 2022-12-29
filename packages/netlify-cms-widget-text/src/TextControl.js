@@ -10,6 +10,7 @@ export default class TextControl extends React.Component {
     classNameWrapper: PropTypes.string.isRequired,
     setActiveStyle: PropTypes.func.isRequired,
     setInactiveStyle: PropTypes.func.isRequired,
+    maxLength: PropTypes.number,
   };
 
   static defaultProps = {
@@ -28,8 +29,15 @@ export default class TextControl extends React.Component {
   }
 
   render() {
-    const { forID, value, onChange, classNameWrapper, setActiveStyle, setInactiveStyle } =
-      this.props;
+    const {
+      forID,
+      value,
+      onChange,
+      classNameWrapper,
+      setActiveStyle,
+      setInactiveStyle,
+      maxLength,
+    } = this.props;
 
     return (
       <Textarea
@@ -41,6 +49,7 @@ export default class TextControl extends React.Component {
         minRows={5}
         css={{ fontFamily: 'inherit' }}
         onChange={e => onChange(e.target.value)}
+        maxLength={maxLength}
       />
     );
   }

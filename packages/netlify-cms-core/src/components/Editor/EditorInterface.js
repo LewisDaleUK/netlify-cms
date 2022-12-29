@@ -133,20 +133,20 @@ function isPreviewEnabled(collection, entry) {
 }
 
 const Split = styled.div`
-display: flex;
-flex-wrap: wrap;
-gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 
-&> :first-child {
-  flex-grow: 1;
-  flex-basis: 40rem;
-}
+  & > :first-child {
+    flex-grow: 1;
+    flex-basis: 40rem;
+  }
 
-&> :last-child {
-  flex-grow: 999;
-  flex-basis: 0;
-  min-inline-size: 50%;
-}
+  & > :last-child {
+    flex-grow: 999;
+    flex-basis: 0;
+    min-inline-size: 50%;
+  }
 `;
 
 class EditorInterface extends Component {
