@@ -26,11 +26,17 @@ import {
 } from '../../reducers/entries';
 
 const CollectionContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
   margin: ${lengths.pageMargin};
+  gap: 1rem;
 `;
 
 const CollectionMain = styled.main`
-  padding-left: 280px;
+  flex-basis: 0;
+  flex-grow: 999;
+  /* ↓ Wrap when the elements are of equal width */
+  min-inline-size: 60%;
 `;
 
 const SearchResultContainer = styled.div`

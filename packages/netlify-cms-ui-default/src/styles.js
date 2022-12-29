@@ -307,7 +307,6 @@ const components = {
   `,
   cardTop: css`
     ${card};
-    width: ${lengths.topCardWidth};
     max-width: 100%;
     padding: 18px 20px;
     margin-bottom: 28px;

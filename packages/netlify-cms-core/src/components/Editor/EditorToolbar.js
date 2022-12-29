@@ -89,12 +89,14 @@ const ToolbarContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  min-width: 800px;
   z-index: ${zIndex.zIndex300};
   background-color: #fff;
-  height: 66px;
+  height: auto;
+  min-height: 66px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 `;
 
 const ToolbarSectionMain = styled.div`

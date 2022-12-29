@@ -21,9 +21,10 @@ const styles = {
 
 const SidebarContainer = styled.aside`
   ${components.card};
-  width: 250px;
+  flex-basis: 20rem;
+  flex-grow: 1;
   padding: 8px 0 12px;
-  position: fixed;
+  position: sticky;
   max-height: calc(100vh - 112px);
   display: flex;
   flex-direction: column;
